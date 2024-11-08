@@ -21,6 +21,6 @@ jobs:
           pipenv install --deploy --dev
       - name: Run test suite
         run: |
-          pipenv run pytest
+          pipenv run pytest --cov
       - name: format
         uses: rickstaa/action-black@v1.3.3
